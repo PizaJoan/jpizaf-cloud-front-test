@@ -2,7 +2,7 @@
 
 This is a very simple application that shows some energy data Helsinki buildings from 1st January 2021 to around 28 Feb 2022.
 
-It has an API written in GO and a frontend written in React.
+It has an API written in GO and a frontend written in React. It uses the UI library ant design (https://ant.design/)
 
 ## Launch
 
@@ -19,6 +19,8 @@ The frontend is accessible on `localhost:3001`
 
 - Implement an error message when login fails
 - Implement a small test for this new feature
+- Change the border radius of all components (button, input, ...)
+- Change the default color from blue to green
 
 Feel free to implement any other improvement as long as you write a test for it.
 
