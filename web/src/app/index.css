@@ -1,3 +1,10 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* app.css */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +12,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ant-layout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #555;
+  padding: 0 50px;
+}
+
+.ant-layout-header .ant-typography {
+  color: #fff !important;
+}
+
+.ant-layout-content {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.ant-form {
+  max-width: 300px;
+  width: 100%;
+}
+
+.ant-btn-primary {
+  width: 100%;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+.ant-input {
+  border-radius: 4px;
+}
+
+.ant-btn-link {
+  float: right;
+  padding: 0;
+  height: auto;
+  line-height: inherit;
+}
+
+.ant-layout-footer {
+  text-align: center;
 }

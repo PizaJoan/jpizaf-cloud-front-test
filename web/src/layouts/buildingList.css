@@ -1,0 +1,29 @@
+/* BuildingList.css */
+.layout-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.layout-header-menu {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.layout-header-actions {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-left: auto;
+}
+
+.layout-header .ant-typography,
+.layout-header .ant-btn {
+	color: #fff !important;
+}
+
+.layout-header .ant-menu-dark .ant-menu-item {
+	margin: 0 15px;
+}
