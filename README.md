@@ -17,6 +17,7 @@ The frontend is accessible on `localhost:3001`
 
 ## Tasks
 
+### Programming
 - Implement an error message when login fails
 - Implement a small test for this new feature
 - Change the border radius of all components (button, input, ...)
@@ -24,14 +25,9 @@ The frontend is accessible on `localhost:3001`
 
 Feel free to implement any other improvement as long as you write a test for it.
 
-## List Redflags
-
-Write here all red flags that you find in the code. Any examples that would stop a code review. If you want to fix some of them, go on.
-
-
-## How you would make this application maintainable and scalable
-
-Write here all the steps you would take.
+### Writing (modify this readme)
+- Write in this all red flags that you find in the code. Any examples that would stop a code review. If you want to fix some of them, go on.
+- How you would make this application maintainable and scalable. Write here all the steps you would take.
 
 ## Test submission
 
