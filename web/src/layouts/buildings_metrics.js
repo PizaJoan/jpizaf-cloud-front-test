@@ -38,7 +38,7 @@ const BuildingMetrics = () => {
             navigate("/login");
             navigate(0);
         }
-    }, []);
+    }, [navigate]);
 
     useEffect(() => {
         const formattedStartDate = startDate.format('YYYY-MM-DD');

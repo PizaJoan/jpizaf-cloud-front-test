@@ -25,7 +25,6 @@ export async function RegisterUser(_email, _pass) {
 }
 
 export function TokenIsValid(_token) {
-    const myDecodedToken = jwt.decodeToken(_token);
 
     if (jwt.isExpired(_token)) {
         return false
