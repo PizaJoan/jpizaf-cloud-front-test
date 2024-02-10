@@ -20,16 +20,18 @@ export default function BookmarksList() {
         if (!TokenIsValid(localStorage.getItem('test-token'))) {
             navigate("/login");
         }
-        GetBookmarks().then(bookmarks => {
-            GetBuildings().then(bld => {
-                const buildingsMap = bld.reduce((acc, curr) => {
-                    acc[curr.id] = curr;
-                    return acc;
-                }, {});
-                setBuildings(buildingsMap);
-                setRows(bookmarks);
-            });
+
+        Promise.all([GetBookmarks(), GetBuildings()]).then(([ bookmarks, buildings ]) => {
+
+          const buildingsMap = buildings.reduce((acc, curr) => {
+            acc[curr.id] = curr;
+            return acc;
+          }, {});
+
+          setBuildings(buildingsMap);
+          setRows(bookmarks);
         });
+
     }, [navigate]);
 
     const columns = [
